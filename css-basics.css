@@ -1,0 +1,103 @@
+
+/* Lengths and percentages
+px
+em: size of current font
+pt
+%
+cm
+mm
+in
+*/
+/*
+colors:
+can be name (e.g. red)
+rgb(255,0,0)
+rgb(100%, 0%, 0%)
+#ff0000
+#f00
+hsl (hue, saturation, lightness)
+*/
+
+p {
+    color: red;
+    background-color: blanchedalmond;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif; /* will look for arial first,
+    then helvetica, then common sans-serif font */
+    font-weight: 200;
+}
+
+h1 {
+    font-style: oblique;
+    text-decoration: underline; /* can specify for links to have
+    text-decoration: none, to eliminate underline */
+    text-transform: capitalize;
+}
+
+h2 {
+    letter-spacing: 0.5em;
+    word-spacing: 1em;
+}
+
+h3 {
+    text-align: center;
+}
+
+#p1 {
+    margin: 20px;
+    padding: 30px;
+    border: 5px solid red;
+}
+
+#p2 {
+    border: 5px;
+    border-color: blue;
+    border-style: solid dotted dashed solid;
+}
+
+/* selectors
+#id
+.class
+tag
+grouping with , (h2, .this-class, .other-class, #another-id)
+nesting with space(p #specific-p, #top p)
+pseudoclasses (a:link, a:visited, a:hover, p:first-child)
+*/
+
+/* shorthand properties
+margin: 1px 5px 10px 20px (top, right, bottom, left)
+padding: 2px red solid;
+font: italic bold 12px/2 courier;
+*/
+
+/* background images
+body {
+    background: white url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
+}
+*/
+
+/* specificity
+p has a specificity of 1 (1 HTML selector)
+div p has a specificity of 2 (2 HTML selectors, 1+1)
+.tree has a specificity of 10 (1 class selector)
+div p.tree has a specificity of 12 (2 HTML selectors + a class selector, 1+1+10)
+#baobab has a specificity of 100 (1 id selector)
+body #content .alternative p has a specificity of 112 (HTML selector + id selector + class selector + HTML selector, 1+100+10+1)
+*/
+
+/* display
+inline (displayed in single line)
+block (fit entire width)
+none (useful for dynamic effects) - visibility: hidden keep the box in place without displaying
+*/
+
+/* positioning
+static: default HTML
+relative: top/right/bottom/left, relative to original position
+absolute: top/right/bottom/left
+fixed: like absolute, but in reference to browser window, not web page
+*/
+
